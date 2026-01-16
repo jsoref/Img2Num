@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Users, Info, Github, SquareArrowOutUpRight, Menu, X } from 'lucide-react';
+import { Home, Users, Info, GitHub, SquareArrowOutUpRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './NavBar.module.css';
 import GlassCard from '@components/GlassCard';
@@ -17,7 +17,7 @@ const EXTERNAL_LINKS = [
   {
     href: 'https://github.com/Ryan-Millard/Img2Num',
     label: 'GitHub',
-    icon: Github,
+    icon: GitHub,
     tooltip: 'Open the project on GitHub',
   },
 ];
@@ -64,7 +64,7 @@ export default function NavBar() {
                   role="menuitem"
                   className={`${styles.navLink} ${pathname === path ? styles.active : ''}`}
                   onClick={closeMenu}>
-                  {/* Supress eslint "no-unused-vars" rule */}
+                  {/* Suppress eslint "no-unused-vars" rule */}
                   {React.createElement(icon, { size: 16 })}
                   <span>{label}</span>
                 </Link>
@@ -76,7 +76,7 @@ export default function NavBar() {
             <li key={href} role="none">
               <Tooltip content={`${tooltip} (opens in a new tab)`}>
                 <a href={href} target="_blank" rel="noopener noreferrer" role="menuitem" className={styles.navLink}>
-                  {/* Supress eslint "no-unused-vars" rule */}
+                  {/* Suppress eslint "no-unused-vars" rule */}
                   {React.createElement(icon, { size: 16 })}
                   <span>{label}</span>
                   <SquareArrowOutUpRight size={12} className={styles.externalIcon} />

@@ -16,7 +16,7 @@ keywords: [navbar, navigation, responsive, mobile menu, react component]
 
 ## Dependencies
 
-- [`lucide-react`](https://lucide.dev/) - For navigation icons (Home, Users, Info, Github, Menu, X, SquareArrowOutUpRight)
+- [`lucide-react`](https://lucide.dev/) - For navigation icons (Home, Users, Info, GitHub, Menu, X, SquareArrowOutUpRight)
 - [`react-router-dom`](https://reactrouter.com/) - For client-side routing via `Link` and `useLocation`
 - `@components/GlassCard` - Glass morphism container styling
 - `@components/ThemeSwitch` - Theme toggle button
@@ -71,7 +71,7 @@ This component accepts no props. All navigation links are defined internally via
 {
   href: 'https://github.com/...',  // Full URL
   label: 'GitHub',                  // Display text
-  icon: Github,                     // lucide-react icon component
+  icon: GitHub,                     // lucide-react icon component
   tooltip: 'Open the project on GitHub'
 }
 ```
@@ -194,7 +194,7 @@ className={`${styles.navLink} ${pathname === path ? styles.active : ''}`}
 
 ```jsx title="NavBar.jsx"
 import { useState } from 'react';
-import { Home, Users, Info, Github, SquareArrowOutUpRight, Menu, X } from 'lucide-react';
+import { Home, Users, Info, GitHub, SquareArrowOutUpRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './NavBar.module.css';
 import GlassCard from '@components/GlassCard';
@@ -212,7 +212,7 @@ const EXTERNAL_LINKS = [
   {
     href: 'https://github.com/Ryan-Millard/Img2Num',
     label: 'GitHub',
-    icon: Github,
+    icon: GitHub,
     tooltip: 'Open the project on GitHub',
   },
 ];
